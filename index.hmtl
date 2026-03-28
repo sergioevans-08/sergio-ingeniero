@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergio el Ingeniero YT - Inspiración y Conocimiento</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Sergio el Ingeniero</div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Inicio</a>
+                <a href="#motivacion" class="nav-link">Motivación</a>
+                <a href="#musica" class="nav-link">Música</a>
+                <a href="#videos" class="nav-link">Vídeos</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="stars"></div>
+        <div class="container hero-content">
+            <h1 class="fade-in">Bienvenido a mi Mundo</h1>
+            <p class="fade-in delay-1">Inspiración, conocimiento y pasión por la ingeniería</p>
+            <button class="cta-button fade-in delay-2">Explorar</button>
+        </div>
+    </section>
+
+    <!-- Sección de Motivación -->
+    <section id="motivacion" class="motivacion">
+        <div class="container">
+            <h2>Frases Motivadoras</h2>
+            <div class="quotes-grid">
+                <div class="quote-card">
+                    <p>"El éxito es la suma de pequeños esfuerzos repetidos día tras día."</p>
+                    <span class="author">- Robert Collier</span>
+                </div>
+                <div class="quote-card">
+                    <p>"No esperes el momento perfecto, toma el momento y hazlo perfecto."</p>
+                    <span class="author">- Zig Ziglar</span>
+                </div>
+                <div class="quote-card">
+                    <p>"La única forma de hacer un gran trabajo es amar lo que haces."</p>
+                    <span class="author">- Steve Jobs</span>
+                </div>
+                <div class="quote-card">
+                    <p>"Tu límite es solo tu imaginación. Atrévete a soñar grande."</p>
+                    <span class="author">- Anónimo</span>
+                </div>
+                <div class="quote-card">
+                    <p>"Los problemas son oportunidades disfrazadas para aprender."</p>
+                    <span class="author">- Anónimo</span>
+                </div>
+                <div class="quote-card">
+                    <p>"Cada día es una nueva oportunidad para ser mejor que ayer."</p>
+                    <span class="author">- Ralph Marston</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Música -->
+    <section id="musica" class="musica">
+        <div class="container">
+            <h2>Mi Canal de Música</h2>
+            <div class="music-content">
+                <div class="music-card">
+                    <div class="music-icon">🎵</div>
+                    <h3>Sergio el Ingeniero YT</h3>
+                    <p>Descubre mi canal de YouTube con contenido exclusivo, tutoriales y más.</p>
+                    <a href="https://www.youtube.com/@SergioelIngenieroYT" target="_blank" class="music-button">Visitar Canal</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Vídeos -->
+    <section id="videos" class="videos">
+        <div class="container">
+            <h2>Vídeos Destacados</h2>
+            <div class="videos-grid">
+                <div class="video-card">
+                    <iframe 
+                        src="https://www.youtube.com/embed/xn-Y4UxNSas?start=33" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-card">
+                    <iframe 
+                        src="https://www.youtube.com/embed/NMOt3DixWS0" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Sergio el Ingeniero. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.youtube.com/@SergioelIngenieroYT" target="_blank" title="YouTube">▶</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
