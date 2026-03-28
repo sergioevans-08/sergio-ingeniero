@@ -1,31 +1,320 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Modern Website</title>
+    <title>Sergio el Ingeniero YT - Inspiración, Conocimiento y Pasión</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <!-- Navbar Profesional -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-code"></i>
+                <span>Sergio</span>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">Sobre Mí</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Contenido <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#musica" class="dropdown-link">Música</a>
+                        <a href="#videos" class="dropdown-link">Vídeos</a>
+                        <a href="#proyectos" class="dropdown-link">Proyectos</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contacto</a>
+                </li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h1>Welcome to Our Professional Website</h1>
-            <p>Your success is our priority. Explore our services and contact us for more!</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 by Your Company. All rights reserved.</p>
+
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" title="Cambiar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="gradient-blur blur-1"></div>
+            <div class="gradient-blur blur-2"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Bienvenido a mi Mundo
+                <span class="gradient-text">Digital</span>
+            </h1>
+            <p class="hero-subtitle">Ingeniero, Creator y Apasionado por la Tecnología</p>
+            <div class="hero-buttons">
+                <a href="about.html" class="btn btn-primary">
+                    <span>Conocer Más</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#musica" class="btn btn-secondary">
+                    <i class="fas fa-music"></i>
+                    <span>Mi Música</span>
+                </a>
+            </div>
+            <div class="scroll-indicator">
+                <i class="fas fa-mouse"></i>
+                <p>Desplázate para explorar</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estadísticas -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-card">
+                <h3>10K+</h3>
+                <p>Suscriptores</p>
+            </div>
+            <div class="stat-card">
+                <h3>50+</h3>
+                <p>Vídeos</p>
+            </div>
+            <div class="stat-card">
+                <h3>100%</h3>
+                <p>Dedicación</p>
+            </div>
+            <div class="stat-card">
+                <h3>24/7</h3>
+                <p>Disponible</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Motivación -->
+    <section class="motivacion" id="motivacion">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Frases Motivadoras</h2>
+                <p class="section-subtitle">Inspiración para tu día a día</p>
+            </div>
+            <div class="quotes-grid">
+                <div class="quote-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"El éxito es la suma de pequeños esfuerzos repetidos día tras día."</p>
+                    <span class="author">Robert Collier</span>
+                </div>
+                <div class="quote-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"No esperes el momento perfecto, toma el momento y hazlo perfecto."</p>
+                    <span class="author">Zig Ziglar</span>
+                </div>
+                <div class="quote-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"La única forma de hacer un gran trabajo es amar lo que haces."</p>
+                    <span class="author">Steve Jobs</span>
+                </div>
+                <div class="quote-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"Tu límite es solo tu imaginación. Atrévete a soñar grande."</p>
+                    <span class="author">Anónimo</span>
+                </div>
+                <div class="quote-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"Los problemas son oportunidades disfrazadas para aprender."</p>
+                    <span class="author">Anónimo</span>
+                </div>
+                <div class="quote-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"Cada día es una nueva oportunidad para ser mejor que ayer."</p>
+                    <span class="author">Ralph Marston</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Música -->
+    <section class="musica" id="musica">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Mi Canal de Música</h2>
+                <p class="section-subtitle">Descubre mi contenido exclusivo en YouTube</p>
+            </div>
+            <div class="music-content">
+                <div class="music-card">
+                    <div class="music-image">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Sergio el Ingeniero YT</h3>
+                    <p>Canal dedicado a compartir contenido de calidad, tutoriales, motivación y conocimiento en ingeniería.</p>
+                    <div class="music-stats">
+                        <span class="stat"><i class="fas fa-users"></i> 10K+ Suscriptores</span>
+                        <span class="stat"><i class="fas fa-video"></i> 50+ Vídeos</span>
+                    </div>
+                    <a href="https://www.youtube.com/@SergioelIngenieroYT" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-youtube"></i>
+                        <span>Visitar Canal</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Vídeos -->
+    <section class="videos" id="videos">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Vídeos Destacados</h2>
+                <p class="section-subtitle">Los mejores contenidos de mi canal</p>
+            </div>
+            <div class="videos-grid">
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/xn-Y4UxNSas?start=33" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h4>Vídeo Destacado 1</h4>
+                        <p>Contenido exclusivo y de calidad para tu aprendizaje</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/NMOt3DixWS0" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h4>Vídeo Destacado 2</h4>
+                        <p>Más conocimiento y entretenimiento en video</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section class="proyectos" id="proyectos">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <p class="section-subtitle">Mis trabajos y creaciones más importantes</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h4>Proyecto 1</h4>
+                    <p>Descripción de tu proyecto destacado</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <a href="#" class="link-arrow">Ver Más <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4>Proyecto 2</h4>
+                    <p>Descripción de tu proyecto destacado</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                    </div>
+                    <a href="#" class="link-arrow">Ver Más <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4>Proyecto 3</h4>
+                    <p>Descripción de tu proyecto destacado</p>
+                    <div class="project-tags">
+                        <span class="tag">Backend</span>
+                        <span class="tag">API</span>
+                    </div>
+                    <a href="#" class="link-arrow">Ver Más <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sergio el Ingeniero</h4>
+                <p>Creador de contenido y apasionado por la tecnología</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Sobre Mí</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Sígueme</h4>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/@SergioelIngenieroYT" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sergio el Ingeniero. Todos los derechos reservados.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
