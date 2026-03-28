@@ -1,31 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Modern Website</title>
+    <title>Sergio el Ingeniero - Inspiración y Conocimiento</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <!-- Canvas para partículas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>Sergio</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#motivacion" class="nav-link">Motivación</a></li>
+                <li><a href="#videos" class="nav-link">Vídeos</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h1>Welcome to Our Professional Website</h1>
-            <p>Your success is our priority. Explore our services and contact us for more!</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 by Your Company. All rights reserved.</p>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="title">Bienvenido a Mi Mundo</h1>
+            <p class="subtitle">Ingeniero, Creator y Apasionado por la Tecnología</p>
+            <button class="cta-btn">Explorar</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre Mí</h2>
+            <p>Soy un ingeniero apasionado por la tecnología y la creación de contenido de calidad. A través de mi canal de YouTube, comparto conocimiento, tutoriales y motivación.</p>
+        </div>
+    </section>
+
+    <!-- Motivación Section -->
+    <section id="motivacion" class="motivacion">
+        <div class="container">
+            <h2>Frases Motivadoras</h2>
+            <div class="quotes-grid">
+                <div class="quote-card">
+                    <p>"El éxito es la suma de pequeños esfuerzos repetidos día tras día."</p>
+                    <span>- Robert Collier</span>
+                </div>
+                <div class="quote-card">
+                    <p>"No esperes el momento perfecto, toma el momento y hazlo perfecto."</p>
+                    <span>- Zig Ziglar</span>
+                </div>
+                <div class="quote-card">
+                    <p>"La única forma de hacer un gran trabajo es amar lo que haces."</p>
+                    <span>- Steve Jobs</span>
+                </div>
+                <div class="quote-card">
+                    <p>"Tu límite es solo tu imaginación."</p>
+                    <span>- Anónimo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="videos">
+        <div class="container">
+            <h2>Mis Vídeos</h2>
+            <div class="videos-grid">
+                <div class="video-card">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-card">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/jNQXAC9IVRw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>¡Ponte en contacto conmigo!</p>
+            <a href="https://www.youtube.com/@SergioelIngenieroYT" target="_blank" class="btn">Mi Canal de YouTube</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Sergio el Ingeniero. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="particles.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
